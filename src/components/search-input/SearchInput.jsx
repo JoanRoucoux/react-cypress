@@ -36,13 +36,18 @@ const SearchInput = (props) => {
   return (
     <Paper elevation={1}>
       <InputBase
+        data-testid="input-search"
         value={state.search}
         onChange={handleOnChange}
         onKeyPress={(event) => event.key === 'Enter' && handleOnClick()}
         className={classes.input}
         placeholder="Search Movies 🍿"
       />
-      <IconButton onClick={handleOnClick} aria-label="Search">
+      <IconButton
+        data-testid="button-search"
+        onClick={handleOnClick}
+        aria-label="Search"
+      >
         <SearchIcon />
       </IconButton>
     </Paper>

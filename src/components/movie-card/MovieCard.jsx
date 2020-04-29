@@ -49,10 +49,19 @@ const MovieCard = (props) => {
         <Card className={classes.card}>
           <CardMedia className={classes.media} image={state.movie.Poster} />
           <CardContent>
-            <Typography className={classes.title} variant="h5" component="h2">
+            <Typography
+              data-testid="movie-title"
+              className={classes.title}
+              variant="h5"
+              component="h2"
+            >
               {movie.Title}
             </Typography>
-            <Typography className={classes.pos} color="textSecondary">
+            <Typography
+              data-testid="movie-year"
+              className={classes.pos}
+              color="textSecondary"
+            >
               {movie.Year}
             </Typography>
           </CardContent>

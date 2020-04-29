@@ -1,0 +1,13 @@
+{
+  "Search": [
+    {
+      "Title": "The Shining",
+      "Year": "1980",
+      "imdbID": "tt0081505",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    }
+  ],
+  "totalResults": "43",
+  "Response": "True"
+}
