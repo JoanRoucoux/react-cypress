@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Grid } from '@material-ui/core';
+import { MovieProvider } from './contexts/movie-context';
+import { MovieCard, SearchInput } from './components';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MovieProvider>
+      <Grid container spacing={16}>
+        <Grid item>
+          <SearchInput />
+        </Grid>
+        <Grid item>
+          <MovieCard />
+        </Grid>
+      </Grid>
+    </MovieProvider>
   );
-}
+};
 
 export default App;
